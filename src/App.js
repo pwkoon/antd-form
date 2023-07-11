@@ -1,5 +1,6 @@
 import './App.css';
 import FormAntd from './components/Form';
+import Pagination from './components/Pagination';
 import Search from './components/Search';
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <FormAntd /> */}
-        <Search />
+        {/* <Search /> */}
+        <Pagination />
       </header>
     </div>
   );

@@ -12,6 +12,9 @@ function App() {
           onFinish={(values) => {
             console.log({values});
           }}
+          onFinishFailed={(error) => {
+            console.log({error});
+          }}
           >
           <Form.Item
             name='fullName'

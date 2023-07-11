@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Table } from 'antd'
+import { Table, Spin } from 'antd'
 
 
 const Pagination = () => {
@@ -54,16 +54,20 @@ const Pagination = () => {
     },
   ]
   return (
-    <Table
-      loading={loading}
-      columns={columns}
-      dataSource={dataSource}
-      pagination={{
-        pageSize: 15,
-        total: 500,
-      }}
-    >
-    </Table>
+    <>
+      {dataSource ?
+      <Table
+        loading={loading}
+        columns={columns}
+        dataSource={dataSource}
+        pagination={{
+          pageSize: 15,
+          total: 500,
+        }}
+      >
+      </Table>
+      : <div className="example"><Spin /></div>}
+    </>
   )
 }
 

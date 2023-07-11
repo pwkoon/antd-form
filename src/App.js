@@ -2,6 +2,7 @@ import './App.css';
 import FormAntd from './components/Form';
 import Pagination from './components/Pagination';
 import Search from './components/Search';
+import SpinAntd from './components/Spin';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         {/* <FormAntd /> */}
         {/* <Search /> */}
         <Pagination />
+        {/* <SpinAntd /> */}
       </header>
     </div>
   );
